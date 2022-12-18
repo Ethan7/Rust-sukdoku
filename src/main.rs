@@ -94,9 +94,9 @@ fn sudokugenerate(undergrid: &mut [[i32; 9]; 9]){
 		/*
 		let mut placements = 0;
 		while placements < 17 { // loop terminates on monotonic incr
-			let x = rng.gen_range(0..9);
-			let y = rng.gen_range(0..9);
-			let guess = rng.gen_range(0..9);
+			x = rng.gen_range(0..9);
+			y = rng.gen_range(0..9);
+			guess = rng.gen_range(0..9);
 			if sudokuhelper(x, y, guess, *undergrid) != 0 {
 				(*undergrid)[x][y] = guess;
 				placements += 1;
